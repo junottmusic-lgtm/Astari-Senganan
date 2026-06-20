@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Virtual Lokasi Astari</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f6f9;
+}
+
+header{
+    background:#0b3d91;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    padding:20px;
+    margin-bottom:20px;
+}
+
+h2{
+    color:#0b3d91;
+}
+
+.info{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.map{
+    width:100%;
+    height:450px;
+    border:none;
+    border-radius:10px;
+}
+
+.footer{
+    text-align:center;
+    padding:20px;
+    background:#0b3d91;
+    color:white;
+}
+
+@media(max-width:768px){
+    .info{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Virtual Lokasi Astari</h1>
+    <p>Senganan, Penebel, Tabanan, Bali</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Informasi Lokasi</h2>
+        <div class="info">
+            <div>
+                <p><strong>Nama:</strong> Astari</p>
+                <p><strong>Alamat:</strong> Desa Senganan, Kecamatan Penebel, Kabupaten Tabanan, Bali</p>
+                <p><strong>Patokan:</strong> Dekat Banjar Senganan</p>
+                <p><strong>Status:</strong> Lokasi Virtual</p>
+            </div>
+
+            <div>
+                <p><strong>Kabupaten:</strong> Tabanan</p>
+                <p><strong>Provinsi:</strong> Bali</p>
+                <p><strong>Negara:</strong> Indonesia</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Peta Lokasi</h2>
+
+        <iframe
+        class="map"
+        src="https://maps.google.com/maps?q=Senganan%20Tabanan%20Bali&t=&z=15&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+
+    </div>
+
+    <div class="card">
+        <h2>Galeri Lokasi</h2>
+
+        <!-- Ganti dengan gambar virtual yang telah dibuat -->
+        <img src="virtual-lokasi.jpg"
+             alt="Virtual Lokasi Astari"
+             style="width:100%;border-radius:10px;">
+    </div>
+
+</div>
+
+<div class="footer">
+    © 2026 Virtual Lokasi Astari - Senganan Tabanan Bali
+</div>
+
+</body>
+</html>
